@@ -104,3 +104,18 @@ footer { background: #11150e; color: #cbd2c5; padding: 30px 0; }
   .about-box, .partnership-box, .quote-form { padding: 28px 22px; }
   .why-grid { grid-template-columns: 1fr; }
 }
+.payment-btn {
+  display: inline-block;
+  background: #7fbf3f;
+  color: #10150b;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.payment-btn:hover {
+  transform: translateY(-2px);
+  opacity: .9;
+}
