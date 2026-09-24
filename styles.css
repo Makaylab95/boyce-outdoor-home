@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --green: #79a92c;
+  --green-dark: #243c13;
+  --green-soft: #edf5df;
+  --cream: #f7f5ee;
+  --ink: #11150e;
+  --muted: #65705c;
+  --line: #dfe4d7;
+  --white: #fff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", Arial, sans-serif; line-height: 1.6; }
+.container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(17,21,14,.96); backdrop-filter: blur(10px); }
+.nav { min-height: 70px; display: flex; align-items: center; gap: 24px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 1.1rem; margin-right: auto; }
+.brand span { color: #a9dc4d; }
+.nav nav { display: flex; gap: 22px; }
+.nav nav a { color: #e7ebdf; text-decoration: none; font-size: .9rem; }
+.call-btn, .primary-btn, .secondary-btn { display: inline-block; border-radius: 999px; padding: 12px 20px; text-decoration: none; font-weight: 700; }
+.call-btn { color: #11150e; background: #a9dc4d; white-space: nowrap; }
+.hero { background: #11150e; color: #fff; padding: 70px 0 90px; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; }
+.eyebrow { margin: 0 0 10px; color: var(--green); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 800; }
+.hero h1 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.7rem, 6vw, 5.2rem); line-height: 1.02; margin: 0 0 22px; }
+.hero h1 span { color: #a9dc4d; }
+.lead { max-width: 600px; color: #d9dfd3; font-size: 1.08rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.primary-btn { background: var(--green); color: #fff; border: 0; cursor: pointer; }
+.primary-btn:hover { background: #5f8b20; }
+.secondary-btn { border: 1px solid #65705c; color: #fff; }
+.service-note { color: #aeb8a7; font-size: .9rem; margin-top: 25px; }
+.hero-card img { display: block; width: 100%; border-radius: 20px; box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+.section { padding: 90px 0; }
+.centered, h2, .section-intro { text-align: center; }
+h2 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.1; margin: 0 auto 16px; }
+.section-intro { color: var(--muted); max-width: 650px; margin: 0 auto 45px; }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.service-card { background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 32px; box-shadow: 0 12px 35px rgba(24,39,12,.06); }
+.icon { font-size: 2rem; margin-bottom: 14px; }
+.service-card h3 { margin: 0 0 16px; font-size: 1.3rem; }
+.service-card ul { list-style: none; padding: 0; margin: 0; }
+.service-card li { padding: 8px 0; border-bottom: 1px solid #edf0e9; }
+.service-card li::before { content: "✓"; color: var(--green); font-weight: 800; margin-right: 10px; }
+.about { padding: 0 0 70px; }
+.about-box { background: var(--green-dark); color: #fff; border-radius: 28px; padding: 55px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.about-box h2, .partnership-box h2 { text-align: left; margin: 0; }
+.about-box p:last-child, .partnership-box p:last-child { color: #dfe8d5; margin: 0; font-size: 1.05rem; }
+
+.why-us { padding: 20px 0 90px; }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; }
+.why-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 35px rgba(24,39,12,.05);
+}
+.why-number {
+  color: var(--green);
+  font-weight: 800;
+  font-size: .78rem;
+  letter-spacing: .15em;
+  margin-bottom: 18px;
+}
+.why-card h3 { margin: 0 0 10px; font-size: 1.15rem; }
+.why-card p { color: var(--muted); margin: 0; font-size: .94rem; }
+.partnership { padding-top: 20px; }
+.partnership-box { background: var(--green-soft); border: 1px solid #d7e7c0; border-radius: 28px; padding: 45px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.partnership-box p:last-child { color: #46523c; }
+.quote-section { background: #fff; }
+.quote-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 65px; align-items: start; }
+.quote-copy h2 { text-align: left; margin-left: 0; }
+.quote-copy > p:not(.eyebrow) { color: var(--muted); }
+.contact-mini { margin-top: 30px; padding: 22px; border-left: 4px solid var(--green); background: var(--cream); display: grid; gap: 4px; }
+.contact-mini a { color: var(--green-dark); font-weight: 800; text-decoration: none; font-size: 1.25rem; }
+.contact-mini span { color: var(--muted); font-size: .9rem; }
+.quote-form { background: var(--cream); border: 1px solid var(--line); border-radius: 22px; padding: 30px; box-shadow: 0 12px 35px rgba(24,39,12,.06); }
+.quote-form label { display: grid; gap: 7px; margin-bottom: 16px; font-weight: 700; font-size: .92rem; }
+.quote-form input, .quote-form select, .quote-form textarea { width: 100%; border: 1px solid #cfd7c7; border-radius: 10px; padding: 12px 13px; font: inherit; background: #fff; color: var(--ink); }
+.quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { outline: 2px solid #a9dc4d; border-color: var(--green); }
+.submit-btn { width: 100%; font-size: 1rem; }
+.form-message { color: var(--green-dark); font-size: .88rem; margin: 12px 0 0; }
+footer { background: #11150e; color: #cbd2c5; padding: 30px 0; }
+.footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.footer-inner strong { color: #fff; }
+.footer-inner a { color: #a9dc4d; text-decoration: none; font-weight: 700; }
+@media (max-width: 900px) {
+  .nav nav { display: none; }
+  .hero-grid, .about-box, .partnership-box, .quote-grid { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: 1fr; }
+  .about-box h2, .partnership-box h2, .quote-copy h2 { text-align: left; }
+}
+@media (max-width: 520px) {
+  .container { width: min(100% - 26px, 1120px); }
+  .nav { min-height: 62px; }
+  .brand { font-size: .95rem; }
+  .call-btn { padding: 9px 13px; font-size: .82rem; }
+  .hero { padding-top: 45px; }
+  .hero h1 { font-size: 2.7rem; }
+  .about-box, .partnership-box, .quote-form { padding: 28px 22px; }
+  .why-grid { grid-template-columns: 1fr; }
+}
