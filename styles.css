@@ -250,3 +250,12 @@ footer { background: #11150e; color: #cbd2c5; padding: 30px 0; }
 .facebook-btn:hover {
   color: #ffffff !important;
 }
+footer a.facebook-btn {
+  background: #79a92c !important;
+  color: white !important;
+  padding: 13px 20px !important;
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
