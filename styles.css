@@ -259,3 +259,10 @@ footer a.facebook-btn {
   text-decoration: none !important;
   display: inline-block !important;
 }
+.project-intro {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    text-align: center;
+    color: #65705c;
+    font-size: 1rem;
+}
