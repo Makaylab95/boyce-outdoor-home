@@ -180,3 +180,28 @@ footer { background: #11150e; color: #cbd2c5; padding: 30px 0; }
         grid-template-columns: 1fr;
     }
 }
+.payment-options {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #f2f5ed;
+    max-width: 600px;
+}
+
+.payment-options h3 {
+    margin: 0 0 8px;
+}
+
+.payment-options p {
+    margin: 6px 0;
+}
+
+.payment-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.payment-options li {
+    margin: 7px 0;
+}
