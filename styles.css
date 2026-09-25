@@ -134,3 +134,15 @@ footer { background: #11150e; color: #cbd2c5; padding: 30px 0; }
   transform: translateY(-2px);
   opacity: .9;
 }
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: block;
+    margin: 25px auto 0;
+}
